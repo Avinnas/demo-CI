@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int digit = 10adaad;
+        int digit = 10;
         System.out.println("Square power of " + digit + " equals " + square(digit));
 
     }
