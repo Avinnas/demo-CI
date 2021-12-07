@@ -24,9 +24,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Test with Maven
+      run: mvn test
   test:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - name: Run test
-      run: mvn test
+    - name: display text
+      run: echo Second Job
