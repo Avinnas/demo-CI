@@ -26,9 +26,17 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test with Maven
       run: mvn test
-  test:
+
+  demo-job:
     needs: build
     runs-on: ubuntu-latest
     steps:
     - name: display text
       run: echo Second Job
+
+  demo-job2:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: display text
+        run: echo Third Job
